@@ -14,7 +14,6 @@ document.addEventListener('DOMContentLoaded', () => {
         return response.json();
     })
     .then( (json) => {
-        console.log(json)
         let images = json.message
         images.forEach(addImage)
     })
